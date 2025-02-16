@@ -1,1 +1,25 @@
-spring.application.name=spring_security_demo
+spring:
+  application:
+    name: spring_security_demo
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:h2:mem:spring_security_demo
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+
+server:
+  port: 8080
+
+

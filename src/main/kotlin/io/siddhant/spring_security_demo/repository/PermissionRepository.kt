@@ -1,4 +1,9 @@
-package io.siddhant.spring_security_demo.domain
+package io.siddhant.spring_security_demo.repository
 
-interface PermissionRepository: org.springframework.data.jpa.repository.JpaRepository<io.siddhant.spring_security_demo.domain.Permission, kotlin.Long> {
+import io.siddhant.spring_security_demo.domain.Permission
+import org.springframework.data.jpa.repository.JpaRepository
+import org.springframework.stereotype.Repository
+
+@Repository
+interface PermissionRepository : JpaRepository<Permission, Long> {
 }

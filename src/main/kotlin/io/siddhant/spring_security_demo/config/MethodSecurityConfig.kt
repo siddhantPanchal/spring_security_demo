@@ -1,4 +1,6 @@
 package io.siddhant.spring_security_demo.config
 
-class MethodSecurityConfig {
-}
+
+//@Configuration
+//@EnableMethodSecurity(prePostEnabled = true, securedEnabled = true, jsr250Enabled = true)
+class MethodSecurityConfig
